@@ -398,6 +398,66 @@
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
+        <h2 class="modal-header">
+          Leave your contacts and we will call you back
+        </h2>
+        <form class="form">
+          <div class="form-wrapper">
+            <label for="name" class="label name">Name</label>
+            <div class="textbox">
+              <input type="text" name="name" id="name" class="input-brdr" /><svg
+                class="input-modal-icon"
+              >
+                <use href="./images/icons.svg#icon-person-modal"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-wrapper">
+            <label for="phone" class="label">Phone</label>
+            <div class="textbox">
+              <input type="tel" name="tel" id="phone" class="input-brdr" /><svg
+                class="input-modal-icon"
+              >
+                <use href="./images/icons.svg#icon-phone-modal"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-wrapper">
+            <label for="email" class="label">Email</label>
+            <div class="textbox" class="label">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="input-brdr"
+              /><svg class="input-modal-icon">
+                <use href="./images/icons.svg#icon-email-modal"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-wrapper-comment">
+            <label for="text" class="label">Comment</label>
+            <!-- <div class="textbox-textarea"> -->
+            <textarea
+              name="text"
+              id="text"
+              cols="30"
+              rows="9"
+              placeholder="Text input"
+              class="input-brdr comment"
+            ></textarea>
+          </div>
+          <!-- </div> -->
+          <div class="check-wrap">
+            <label for="check"></label>
+            <input type="checkbox" class="check-terms" id="check" /><span
+              class="privacy-text"
+              >I accept the terms and conditions of the
+              <a href="" class="privacy-link"> Privacy Policy</a>
+            </span>
+          </div>
+          <button type="submit" class="button-send">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
