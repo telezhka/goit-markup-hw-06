@@ -350,7 +350,7 @@
     </main>
     <footer class="footer">
       <div class="container footer-cont">
-        <div>
+        <div class="footer-basic">
           <a href="./index.html" class="logo-footer"
             ><span class="logo-first">Web</span>Studio</a
           >
@@ -388,6 +388,27 @@
             </li>
           </ul>
         </div>
+        <div class="footer-mail">
+          <h3 class="sm-footer">Subscribe</h3>
+          <div class="footer-mail-box">
+            <label for="mail-sub"
+              ><input
+                type="email"
+                name="mail-sub"
+                id="mail-sub"
+                class="mail-sub"
+                placeholder="E-mail"
+                required
+              />
+            </label>
+            <button type="submit" class="sub-button">
+              <p>Subscribe</p>
+              <svg class="paperplane">
+                <use href="./images/icons.svg#icon-paperplane"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </footer>
     <!-- modal -->
@@ -401,13 +422,17 @@
         <h2 class="modal-header">
           Leave your contacts and we will call you back
         </h2>
-        <form class="form">
+        <form class="form" name="order-form" autocomplete="on">
           <div class="form-wrapper">
             <label for="name" class="label name">Name</label>
             <div class="textbox">
-              <input type="text" name="name" id="name" class="input-brdr" /><svg
-                class="input-modal-icon"
-              >
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="input-brdr"
+                required
+              /><svg class="input-modal-icon">
                 <use href="./images/icons.svg#icon-person-modal"></use>
               </svg>
             </div>
@@ -415,9 +440,13 @@
           <div class="form-wrapper">
             <label for="phone" class="label">Phone</label>
             <div class="textbox">
-              <input type="tel" name="tel" id="phone" class="input-brdr" /><svg
-                class="input-modal-icon"
-              >
+              <input
+                type="tel"
+                name="tel"
+                id="phone"
+                class="input-brdr"
+                required
+              /><svg class="input-modal-icon">
                 <use href="./images/icons.svg#icon-phone-modal"></use>
               </svg>
             </div>
@@ -430,6 +459,7 @@
                 name="email"
                 id="email"
                 class="input-brdr"
+                required
               /><svg class="input-modal-icon">
                 <use href="./images/icons.svg#icon-email-modal"></use>
               </svg>
@@ -449,12 +479,16 @@
           </div>
           <!-- </div> -->
           <div class="check-wrap">
-            <label for="check"></label>
-            <input type="checkbox" class="check-terms" id="check" /><span
-              class="privacy-text"
-              >I accept the terms and conditions of the
-              <a href="" class="privacy-link"> Privacy Policy</a>
-            </span>
+            <label for="check" class="check">
+              <input type="checkbox" class="check-terms" id="check" />
+              <span class="checkmark"
+                ><svg class="checkmark-icon">
+                  <use href="./images/icons.svg#icon-check"></use></svg></span
+              ><span class="privacy-text"
+                >I accept the terms and conditions of the
+                <a href="" class="privacy-link"> Privacy Policy</a>
+              </span>
+            </label>
           </div>
           <button type="submit" class="button-send">Send</button>
         </form>
