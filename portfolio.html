@@ -316,7 +316,7 @@
         </div>
         <div class="footer-mail">
           <h3 class="sm-footer">Subscribe</h3>
-          <div class="footer-mail-box">
+          <form name="sub" class="footer-mail-box">
             <label for="mail-sub"
               ><input
                 type="email"
@@ -324,15 +324,16 @@
                 id="mail-sub"
                 class="mail-sub"
                 placeholder="E-mail"
+                required
               />
             </label>
             <button type="submit" class="sub-button">
-              <p>Subscribe</p>
+              <span>Subscribe</span>
               <svg class="paperplane">
                 <use href="./images/icons.svg#icon-paperplane"></use>
               </svg>
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </footer>
